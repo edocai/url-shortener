@@ -33,9 +33,9 @@ Redirect shortened URLs to their original destination
 View statistics on clicks for each shortened URL
 
 ### Technologies
-TypeScript: A superset of JavaScript that adds optional types, making it easier to catch errors and improve code maintainability
-Node.js: A JavaScript runtime that allows you to run JavaScript on the server-side
-Express.js: A popular Node.js web framework for building web applications and APIs
+TypeScript: A superset of JavaScript that adds optional types, making it easier to catch errors and improve code maintainability\
+Node.js: A JavaScript runtime that allows you to run JavaScript on the server-side\
+Express.js: A popular Node.js web framework for building web applications and APIs\
 MongoDB: A document-oriented NoSQL database used for storing the URLs and click statistics
 
 ### Conclusion
