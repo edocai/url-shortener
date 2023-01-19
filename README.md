@@ -1,6 +1,11 @@
 ## URL Shortener
 This is a URL shortening service built using TypeScript, Node.js, Express.js, and MongoDB.
 
+<h2 align="center">
+  <img src="preview.png" alt="" width="600px" height="300px" />
+  <br>
+</h2>
+
 ### Getting Started
 Clone the repository:
 
