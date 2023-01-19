@@ -1,6 +1,7 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const ShortUrl = require("./models/shortUrls");
+const serverless = require("serverless-http");
 const app = express();
 
 mongoose.connect("mongodb://localhost/urlShortener", {
@@ -41,3 +42,4 @@ app.post("/delete/:shortUrl", async (req, res) => {
 });
 
 app.listen(process.env.PORT || 5000);
+module.exports.handler = serverless(app);
