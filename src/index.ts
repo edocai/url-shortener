@@ -34,4 +34,10 @@ app.get("/:shortUrl", async (req, res) => {
   res.redirect(shortUrl.full);
 });
 
+app.post("/delete/:shortUrl", async (req, res) => {
+  await ShortUrl.deleteOne({ short: req.params.shortUrl })
+
+  res.redirect("/");
+});
+
 app.listen(process.env.PORT || 5000);
