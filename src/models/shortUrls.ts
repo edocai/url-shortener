@@ -1,14 +1,18 @@
 import mongoose from "mongoose";
+//a library that creates a unique short identifier
 import shortId = require("shortid");
 
 const shortUrlSchema = new mongoose.Schema({
+  //keys are columns
     full: {
+      //type of column
         type: String,
         required: true,
     },
     short: {
         type: String,
         required: true,
+        //generates short id
         default: shortId.generate,
     },
     clicks: {
@@ -18,6 +22,7 @@ const shortUrlSchema = new mongoose.Schema({
     },
 });
 
+//hooks up database and model
 module.exports = mongoose.model("ShortUrl", shortUrlSchema);
 export function find() {
   throw new Error("Function not implemented.");
